@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Default">
+		<message>
+			<![CDATA[Orders layout2]]>
+		</message>
+	</layout>
+	<state>
+		<name>Orders Form layout</name>
+		<description>Choose the appropriate form you want to associate this menu item with</description>
+		<url addpath="/administrator/components/com_orders/elements">
+			<param name="id" type="FormsList" default="1" label="Form" description="Select the form name" />
+		</url>
+		<params />
+	</state>
+</metadata>

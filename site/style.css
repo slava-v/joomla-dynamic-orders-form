@@ -1,0 +1,59 @@
+@CHARSET "utf8";
+
+.orders-form p {
+	margin: 14px 0px!important;
+}
+.orders-form .row {
+	clear:both;
+}
+
+.orders-form .row label {
+}
+
+.orders-form .m {
+	color:red;
+}
+
+.orders-form .quantity {
+	float:left;
+	margin-right:5px;
+}
+
+.orders-form .icons a img{
+	vertical-align:middle;
+	margin:3px 0px;
+}
+
+.orders-form .picture img {
+	width: 100px;
+}
+
+.orders-form ul.products {
+	list-style:none;
+}
+
+.orders-form .products li {
+	background:none!important;
+	clear:both;
+	overflow: auto;
+	padding: 4px;
+	border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+.orders-form .products .title {
+	font-weight: bold;
+	display:block;
+	font-size: 115%;
+}
+
+.orders-form .products .description {
+	float:left;
+	width:500px;
+}
+
+.orders-form .products .picture {
+	width: 110px;
+	height: 80px;
+	float: left;
+	overflow:hidden;
+}

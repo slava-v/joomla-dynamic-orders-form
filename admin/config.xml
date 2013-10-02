@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<params>
+		<param name="show_noauth" type="radio" default="1" label="Allow Public" description="TIPLINKS">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="use_return_url" type="radio" default="1" label="Append Return url" description="Appends return parameter with base64 encoded url">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="redirect_noauth" type="text" size="100" default="index.php?option=com_user&amp;view=login" label="Redirect URL" description="Internal url to redirect to. Should start with 'index.php' " />
+		<param name="redirect_message" type="textarea" size="100" default="__ALERTNOTAUTH" label="Redirect Message" description="The message to display ater redirect. Use __ in front of text to define JOOMLA internal MessageID string" />
+	</params>
+</config>

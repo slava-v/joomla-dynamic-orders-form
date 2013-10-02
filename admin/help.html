@@ -1,0 +1,67 @@
+<h1>Description</h1>
+<p>
+The component allows you to create / configure a form and it's fields for joomla, and have displayed a list of products on that form. 
+<br/>Main features:</p>
+<ul>
+<li>Create different forms</li>
+<li>Each form has it's fields (text, textarea, static, checkbox)</li>
+<li>Forms may have product listing with Title, Price with Currency, Description, Picture</li>
+<li>Forms can be saved in google spreadsheet</li>
+</ul>
+
+<h1>Products</h1>
+<p>When defining products for a form, the form will display a list of products and their data plus a "Quantity" or "Checkbox" for the product</p>
+<p>This way, products can be of two types: "Quantifiable" (for any product that is quantifiable ) and "Yes/no" (like for delivery option with price)</p>
+<p>Products list have a "Totals" field at the bottom that sums the price*quantity selected by user. If the product is a option then if checked the "Totals" is added with the price of that option, otherwise the "Totals" is substracted that price.</p>
+
+<h1>Forms</h1>
+<h2>Send data to google spreadsheet</h2>
+<p>To send data to google spreadsheet, you need to:</p>
+<ul>
+<li>Create a google spreadsheet first</li>
+<li>Create a new form and add <b>text</b> fields with same name as the form fields here</li>
+<li>While editing form be sure to 
+	<ul style="color:darkred;">
+		<li>unckeck the "Require sign-in to view this form"</li>
+		<li>Verify all field names from google form to correspond to the field names set here (char case doesn't matter)</li>
+	</ul>
+<li>From google spreadsheet view go to  Forms -> Go to live form and copy the formkey value from the url in browser<br><br/>
+Example, my form url is:<br/> https://docs.google.com/spreadsheet/viewform?formkey=<b>dHZjejFsR1dqcEt2MXBZX29kdHdyQ2c6MQ</b>#gid=0<br/>
+<img src="/administrator/components/com_orders/images/form-key.jpg" />
+<br/><br/>You'll need the highlighted string.
+
+</li>
+
+</ul>
+<p>After creating the google spreadsheet and form, you need to activate saving the order into google spreadsheet:</p>
+<ul>
+<li>Go to "Forms" , click on your form title ( you'll have opened a popup to edit form),</li>
+<li>Scroll down until "Google Spreadsheet Settings", and tick "Activate"</li>
+<li>Enter your formkey in the field right bellow the tick box</li>
+</ul>
+
+<h1>Fields</h1>
+<p>Fields are the main element of the form. The field have the following properties:</p>
+<ul>
+<li>Name - The name of the field must contain only alphanumeric and _ (underline)</li>
+<li>Label - Is the field label, displayed with the input field before or after ( see "Place label after input field" option )</li>
+<li>Help text - Is displayed directly bellow label, and describes the field</li>
+<li>Type - the type of the field
+	<ul><li>Static - displayes a pharagraph</li>
+	<li>Text - displays a one line of text input box</li>
+	<li>Textarea - displays a pharagraph input box</li>
+	<li>Checkbox - displays a check box </li>
+	</ul></li>
+<li>Is Required Field - sets the field as required field, and on form submition is checked to be filled in</li>
+<li>Default value  - the default value of the field</li>
+<li>Form where to include - Select the form where the field will be displayed</li>
+<li>Validation function - the function that is applied when validating the field</li>
+<li>Validation error message - This message is displayed if the field does not pass validation function when user submits the form</li>
+<li>Style class name - The style class name is set to the field tag when displaying on form</li>
+<li>Inline style - the style applied as inline in "Style" attribute of the field tag</li>
+<li>Place label after input field - places the label of the field directly after the input field. Commonly used for checkbox-es</li>
+<li>Order - the order of the field amonth other fields</li> 
+</ul>
+
+<h1>Thank you</h1>
+<p>For any other questions mail me at: <a href="mailto:veaceslav.vasilache@gmail.com">veaceslav.vasilache@gmail.com</a>.<br/>Thank you.</p>

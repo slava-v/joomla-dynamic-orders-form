@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://www.joomla.org/xml/dtd/1.5/component-install.dtd">
+<install type="component" version="1.5.0">
+	<name>Orders</name>
+	<!-- The following elements are optional and free of formatting conttraints -->
+	<creationDate>2012-06-22</creationDate>
+	<author>Veaceslav Vasilache</author>
+	<authorEmail>veaceslav.vasilache@gmail.com</authorEmail>
+	<authorUrl>http://aiciwd.com</authorUrl>
+	<copyright>Copyright Info</copyright>
+	<license>License Info</license>
+	<!--  The version string is recorded in the components table -->
+	<version>1.01</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>Component allows receiving orders from the website. Orders filled-in are sent to email. Order form can be changed.</description>
+
+<!-- Install Database Section -->
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+
+        <!-- Uninstall Database Section -->
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	<!-- Site Main File Copy Section -->
+	<!-- Note the folder attribute: This attribute describes the folder
+      to copy FROM in the package to install therefore files copied
+      in this section are copied from /site/ in the package -->
+	<files folder="site">
+		<filename>controller.php</filename>
+		<filename>index.html</filename>
+		<filename>models/orders.php</filename>
+		<filename>orders.php</filename>
+		<filename>style.css</filename>
+		<filename>userlib/AeroviasBrasilNF.ttf</filename>
+		<filename>userlib/jquery-lightbox-0.5/index.htm</filename>
+		<filename>userlib/jquery-lightbox-0.5/images/lightbox-btn-close.gif</filename>
+		<filename>userlib/jquery-lightbox-0.5/images/lightbox-btn-next.gif</filename>
+		<filename>userlib/jquery-lightbox-0.5/images/lightbox-btn-prev.gif</filename>
+		<filename>userlib/jquery-lightbox-0.5/images/lightbox-blank.gif</filename>
+		<filename>userlib/jquery-lightbox-0.5/images/lightbox-ico-loading.gif</filename>
+		<filename>userlib/jquery-lightbox-0.5/js/jquery.lightbox-0.5.pack.js</filename>
+		<filename>userlib/jquery-lightbox-0.5/js/jquery.js</filename>
+		<filename>userlib/jquery-lightbox-0.5/js/jquery.lightbox-0.5.js</filename>
+		<filename>userlib/jquery-lightbox-0.5/js/jquery.lightbox-0.5.min.js</filename>
+		<filename>userlib/jquery-lightbox-0.5/css/jquery.lightbox-0.5.css</filename>
+		<filename>userlib/jquery-lightbox-0.5/photos/thumb_image3.jpg</filename>
+		<filename>userlib/jquery-lightbox-0.5/photos/thumb_image5.jpg</filename>
+		<filename>userlib/jquery-lightbox-0.5/photos/image4.jpg</filename>
+		<filename>userlib/jquery-lightbox-0.5/photos/thumb_image2.jpg</filename>
+		<filename>userlib/jquery-lightbox-0.5/photos/image3.jpg</filename>
+		<filename>userlib/jquery-lightbox-0.5/photos/image1.jpg</filename>
+		<filename>userlib/jquery-lightbox-0.5/photos/image2.jpg</filename>
+		<filename>userlib/jquery-lightbox-0.5/photos/thumb_image1.jpg</filename>
+		<filename>userlib/jquery-lightbox-0.5/photos/image5.jpg</filename>
+		<filename>userlib/jquery-lightbox-0.5/photos/thumb_image4.jpg</filename>
+		<filename>userlib/recaptcha-php-1.11/LICENSE</filename>
+		<filename>userlib/recaptcha-php-1.11/README</filename>
+		<filename>userlib/recaptcha-php-1.11/example-captcha.php</filename>
+		<filename>userlib/recaptcha-php-1.11/recaptchalib.php</filename>
+		<filename>userlib/recaptcha-php-1.11/example-mailhide.php</filename>
+		<filename>userlib/Medrano.ttf</filename>
+		<filename>userlib/lgs.ttf</filename>
+		<filename>views/orders/metadata.xml</filename>
+		<filename>views/orders/index.html</filename>
+		<filename>views/orders/view.html.php</filename>
+		<filename>views/orders/tmpl/default_fields.php</filename>
+		<filename>views/orders/tmpl/default.php</filename>
+		<filename>views/orders/tmpl/index.html</filename>
+		<filename>views/orders/tmpl/default.xml</filename>
+		<filename>views/orders/tmpl/default_product.php</filename>
+		<filename>views/index.html</filename>
+	</files>
+
+	<administration>
+		<!-- Administration Menu Section -->
+		<menu>Orders</menu>
+
+		<!-- Administration Main File Copy Section -->
+		<files folder="admin">
+			<filename>config.xml</filename>
+			<filename>install.mysql.utf8.sql</filename>
+			<filename>uninstall.mysql.utf8.sql</filename>
+			<filename>controller.php</filename>
+			<filename>controllers/products.php</filename>
+			<filename>controllers/forms.php</filename>
+			<filename>controllers/fields.php</filename>
+			<filename>elements/FormsList.php</filename>
+			<filename>elements/index.html</filename>
+			<filename>help.html</filename>
+			<filename>images/form-key.jpg</filename>
+			<filename>index.html</filename>
+			<filename>models/products.php</filename>
+			<filename>models/forms.php</filename>
+			<filename>models/fields.php</filename>
+			<filename>orders.php</filename>
+			<filename>style.css</filename>
+			<filename>views/products/view.html.php</filename>
+			<filename>views/products/tmpl/default.php</filename>
+			<filename>views/products/tmpl/default_form.php</filename>
+			<filename>views/orders/view.html.php</filename>
+			<filename>views/orders/tmpl/default.php</filename>
+			<filename>views/forms/view.html.php</filename>
+			<filename>views/forms/tmpl/default.php</filename>
+			<filename>views/forms/tmpl/default_form.php</filename>
+			<filename>views/fields/view.html.php</filename>
+			<filename>views/fields/tmpl/default.php</filename>
+			<filename>views/fields/tmpl/default_form.php</filename>
+		</files>  
+	</administration>
+</install>
